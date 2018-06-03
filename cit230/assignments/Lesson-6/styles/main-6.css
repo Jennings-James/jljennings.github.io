@@ -1,0 +1,125 @@
+/* Delete these CSS comments after reading. */
+/* This main css file contains the default rules and is geared toward the small/phone view */
+    @import url("https://fonts.googleapis.com/css?family=Oswald,Raleway,Source+Sans+Pro");
+ *{ box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+body {
+    font-size: 16px;
+}
+
+
+header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+    max-width: 100%; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+    margin: auto;
+    padding: 15px;
+}
+header {}
+header h1 {
+    display: inline-block;
+    color: #6d9dc5;
+    font-family: "Oswald";
+    font-size: 3em;
+    position: relative;
+    margin-top: 20px;
+    padding: 25px;
+}
+header img {
+    float: left;
+    padding: 5px;
+    width: 75%;
+}
+header .subheading {
+    color: #447604;
+    font-family: "Raleway";
+    font-size: 150%;
+    position: relative;
+}
+nav {
+
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-left: 2%;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    background-color: #447604;
+    color: #5efc8d;
+    padding: .6rem 2%;
+    text-decoration: none;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+nav ul li.active a {
+    color: #447604;
+    background-color: #5efc8d;
+}
+nav ul li a:hover {
+    background-color: #6d9dc5;
+}
+nav ul.hide {
+    display: none;
+}
+main {
+}
+main h2 {
+    color: #447604;
+    font-family: "Raleway";
+    font-size: 150%;
+    position: relative;
+    padding: .5rem;
+}
+main figure { margin: 0 0 1rem 2%; width:100%; }
+main figure img {
+    width: 75%;
+}
+
+section p {
+    color: #447604;
+    font-family: "Source Sans Pro";
+    font-size: 100%;
+    margin: 1em;
+}
+section picture img {
+    width: 100px;
+     position: relative;
+}
+section h3 {
+    color: #447604;
+    font-family: "Raleway";
+    font-size: 115%;
+    margin-left: 1em;
+}
+.forecast {
+    display: none;
+}
+table {
+    background-color: #aaffe5;
+    margin: 1em;
+    padding-bottom: 1em;
+}
+article {
+    font-family: "Source Sans Pro";
+}
+article h3 {
+    color: #447604;
+    font-family: "Raleway";
+    margin: 1em;
+}
+article img {
+    float: left;
+    width: 50%;
+    margin: .5em;
+}
+footer {
+    background-color: #6d9dc5;
+    font-family: "Source Sans Pro";
+}

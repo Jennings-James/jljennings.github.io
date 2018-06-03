@@ -1,0 +1,11 @@
+@media only screen and (min-width: 64em) {
+    header img {
+        width: 20%;
+    }
+    main figure img {
+        width: 35%;
+    }
+    article img {
+        width: 35%;
+    }
+  }

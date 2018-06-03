@@ -1,6 +1,6 @@
 /* Delete these CSS comments after reading. */
 /* This main css file contains the default rules and is geared toward the small/phone view */
-    @import url("https://fonts.googleapis.com/css?family=Oswald,Raleway,Source+Sans+Pro");
+    @import url("https://fonts.googleapis.com/css?family=Oswald,Raleway");
  *{ box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 body {
     font-size: 16px;
@@ -84,7 +84,7 @@ main figure img {
 
 section p {
     color: #447604;
-    font-family: "Source Sans Pro";
+    font-family: "Raleway";
     font-size: 100%;
     margin: 1em;
 }
@@ -107,7 +107,7 @@ table {
     padding-bottom: 1em;
 }
 article {
-    font-family: "Source Sans Pro";
+    font-family: "Raleway";
 }
 article h3 {
     color: #447604;

@@ -1,0 +1,183 @@
+/* Delete these CSS comments after reading. */
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    @import url("https://fonts.googleapis.com/css?family=Oswald");/* Declare the base font-family*/
+    @import url("https://fonts.googleapis.com/css?family=Raleway");
+}
+
+
+header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+    max-width: 100%; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+}
+
+header {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+header h1 {
+    color: #6d9dc5;
+    font-family: "Oswald";
+    font-size: 3em;
+    margin-top: 1px;
+    padding: 15px;
+}
+header img {
+    padding: 5px;
+}
+header .subheading {
+    color: #447604;
+    font-family: "Raleway";
+    font-size: 150%;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+
+}
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+}
+nav ul {
+    list-style-type: none;
+    margin-left: 2%;
+    padding: 0;
+
+}
+nav ul li a {
+    background-color: #447604;
+    color: #5efc8d;
+    padding: 0;
+    text-decoration: none;
+    border-top: 1px solid rgba(0,0,0,0.3);
+
+}
+nav ul li a {}
+nav ul li.active a {
+    color: #447604;
+    background-color: #5efc8d;
+}
+nav ul li a:hover {
+    background-color: #6d9dc5;
+}
+nav ul.hide {
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+main h2 {
+    color: #447604;
+    font-family: "Raleway";
+    font-size: 150%;
+    position: relative;
+    padding: .5rem;
+}
+main figure { margin: 0 0 1rem 2%; width:100%; }
+main figure img {
+    display: flex;
+    width: 100vw;
+}
+section.weather-summary {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.highlow {
+    color: #447604;
+    font-family: "Raleway";
+    font-size: 100%;
+
+}
+
+.current {
+    color: #447604;
+    font-family: "Raleway";
+    font-size: 100%;
+
+
+}
+section picture img {
+    width: 100px;
+
+}
+section h3 {
+    color: #447604;
+    font-family: "Raleway";
+    font-size: 115%;
+
+}
+
+.conditions{
+    color: #447604;
+}
+
+.forecast {
+    display: none;
+}
+table {
+    background-color: #aaffe5;
+    margin: 1em;
+    padding-bottom: 1em;
+}
+article {
+    font-family: "Raleway";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+article h3 {
+    color: #447604;
+    font-family: "Raleway";
+
+}
+
+article p {
+    margin: 1em;
+    font-size: 90%
+    font-family: "Oswald";
+}
+article img {
+    align-self: flex-start;
+    width: 50%;
+    margin: .5em;
+}
+/*Gallery grid*/
+main.wGallery h2 {
+    text-align: center;
+
+}
+div.gallery {
+    padding: 0 2%;
+    display: grid;
+    grid-template-columns: auto;
+}
+div.gallery figure {
+    margin: 1rem .5;
+}
+div.gallery figure img {
+    width: 100%;
+    border: 1px solid #aaa;
+
+}
+div.gallery figure figcaption {
+    text-align: center;
+    font-size: 110%;
+    font-family: "Oswald";
+}
+
+footer {
+    background-color: #6d9dc5;
+    margin: 1em;
+    font-family: "Oswald";
+}

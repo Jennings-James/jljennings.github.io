@@ -10,8 +10,10 @@ table {
     box-shadow: 5px 10px 15px #628ca6;
 }
 table, th,td {
+    font-family: Ubuntu;
     border: 1px solid black;
     border-collapse: collapse;
+    width: 300px;
 }
 thead {
     font-size: 1.5em;

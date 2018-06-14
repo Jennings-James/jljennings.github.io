@@ -1,0 +1,42 @@
+@media only screen and (min-width:37.5em) {
+
+    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
+    nav {
+        display:contents;
+    }
+    nav button {
+        display:none;
+    }  /* hamburger button does not need to be shown in the medium on up views */
+
+    nav ul.hide {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header {
+        display: flex;
+        flex-direction:row;
+        flex-flow: wrap;
+    }
+    header h1 {
+
+    }
+    section.weather-summary {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    section.forecast h3 {
+        align-self: center
+    }
+    section.forecast {
+        display: contents;
+    }  /* show the 10-day forecast with the medium view and up */
+
+    /*gallery grid*/
+    div.gallery {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3%;
+    }
+
+}

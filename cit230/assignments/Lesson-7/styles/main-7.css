@@ -1,12 +1,12 @@
 /* Delete these CSS comments after reading. */
 /* This main css file contains the default rules and is geared toward the small/phone view */
+@import url("https://fonts.googleapis.com/css?family=Oswald");/* Declare the base font-family*/
+@import url("https://fonts.googleapis.com/css?family=Raleway");
 
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
     font-size: 16px;
-    @import url("https://fonts.googleapis.com/css?family=Oswald");/* Declare the base font-family*/
-    @import url("https://fonts.googleapis.com/css?family=Raleway");
 }
 
 
@@ -90,6 +90,7 @@ main figure img {
 }
 section.weather-summary {
     display: flex;
+    border: 2px solid #6d9dc5;
     align-items: center;
     flex-direction: column;
 }
@@ -144,7 +145,7 @@ article h3 {
 
 article p {
     margin: 1em;
-    font-size: 90%
+    font-size: 90%;
     font-family: "Oswald";
 }
 article img {
@@ -163,7 +164,7 @@ div.gallery {
     grid-template-columns: auto;
 }
 div.gallery figure {
-    margin: 1rem .5;
+    margin: 1rem .5rem;
 }
 div.gallery figure img {
     width: 100%;

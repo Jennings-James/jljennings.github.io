@@ -46,19 +46,23 @@ nav button {
 }
 nav ul {
     list-style-type: none;
-    margin-left: 2%;
+    margin: 2rem;
     padding: 0;
 
+
+}
+nav ul li {
+    padding: .5rem;
 }
 nav ul li a {
     background-color: #447604;
     color: #5efc8d;
-    padding: 0;
     text-decoration: none;
-    border-top: 1px solid rgba(0,0,0,0.3);
-
+    border: 1px solid #5efc8d;
+    padding: .5rem;
 }
-nav ul li a {}
+
+
 nav ul li.active a {
     color: #447604;
     background-color: #5efc8d;
@@ -75,21 +79,29 @@ main {
     flex-direction: column;
 }
 main h2 {
+    display: flex;
     color: #447604;
     font-family: "Raleway";
     font-size: 150%;
-    position: relative;
     padding: .5rem;
+    justify-content: center;
 }
-main figure { margin: 0 0 1rem 2%; width:100%; }
+/*main figure { margin: 0 0 1rem 2%; width:100%; }*/
 main figure img {
     display: flex;
-    width: 100vw;
+    width: 95vw;
+    justify-content:space-around;
 }
 section.weather-summary {
     display: flex;
+    border: 2px solid #6d9dc5;
+    padding: 1rem;
+    margin: 2rem;
     align-items: center;
     flex-direction: column;
+}
+section.weather-summary h3{
+    justify-content: center;
 }
 .highlow {
     color: #447604;
@@ -125,7 +137,7 @@ section h3 {
 }
 table {
     background-color: #aaffe5;
-    margin: 1em;
+    margin: 2rem;
     padding-bottom: 1em;
 }
 article {
@@ -141,12 +153,12 @@ article h3 {
 }
 
 article p {
-    margin: 1em;
+    margin: 2rem;
     font-size: 90%;
-        font-family: "Oswald";
+    font-family: "Oswald";
 }
 article img {
-    align-self: flex-start;
+   /* align-self: flex-start;*/
     width: 50%;
     margin: .5em;
 }
@@ -175,8 +187,10 @@ div.gallery figure figcaption {
 }
 
 footer {
+    display: flex;
     background-color: #6d9dc5;
-    margin: 1em;
+    margin: 2rem;
+    padding: .5rem;
     font-family: "Oswald";
 }
 /*storm center form*/

@@ -12,6 +12,9 @@
         display: flex;
         justify-content: space-around;
     }
+    nav ul {
+        background-color: #447604;
+    }
 
     header {
         display: flex;

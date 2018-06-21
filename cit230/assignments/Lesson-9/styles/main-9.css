@@ -1,0 +1,242 @@
+
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+ { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+}
+
+
+header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+    max-width: 100%; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+}
+
+header {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+header h1 {
+    color: #6d9dc5;
+    font-family: "Oswald";
+    font-size: 3em;
+    margin: 2rem;
+    /*padding: 15px;*/
+}
+header img {
+    padding: 5px;
+
+}
+header .subheading {
+    color: #447604;
+    font-family: "Raleway";
+    font-size: 150%;
+    margin: 2rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+
+}
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+}
+nav ul {
+    list-style-type: none;
+    margin: 2rem;
+    padding: 0;
+
+
+}
+nav ul li {
+    padding: .5rem;
+}
+nav ul li a {
+    background-color: #447604;
+    color: #5efc8d;
+    text-decoration: none;
+    border: 1px solid #5efc8d;
+    padding: .5rem;
+}
+
+
+nav ul li.active a {
+    color: #447604;
+    background-color: #5efc8d;
+}
+nav ul li a:hover {
+    background-color: #6d9dc5;
+}
+nav ul.hide {
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+main h2 {
+    display: flex;
+    color: #447604;
+    font-family: "Raleway";
+    font-size: 150%;
+    padding: .5rem;
+    justify-content: center;
+}
+/*main figure { margin: 0 0 1rem 2%; width:100%; }*/
+main figure img {
+    display: flex;
+    width: 95vw;
+    justify-content:space-around;
+}
+section.weather-summary {
+    display: flex;
+    border: 2px solid #6d9dc5;
+    padding: 1rem;
+    margin: 2rem;
+    align-items: center;
+    flex-direction: column;
+}
+section.weather-summary h3{
+    justify-content: center;
+}
+.highlow {
+    color: #447604;
+    font-family: "Raleway";
+    font-size: 100%;
+
+}
+
+.current {
+    color: #447604;
+    font-family: "Raleway";
+    font-size: 100%;
+
+
+}
+section picture img {
+    width: 100px;
+
+}
+section h3 {
+    color: #447604;
+    font-family: "Raleway";
+    font-size: 115%;
+
+}
+
+.conditions{
+    color: #447604;
+}
+
+.forecast {
+    display: none;
+}
+table {
+    background-color: #aaffe5;
+    margin: 2rem;
+    padding-bottom: 1em;
+}
+article {
+    font-family: "Raleway";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+article h3 {
+    color: #447604;
+    font-family: "Raleway";
+
+}
+
+article p {
+    margin: 2rem;
+    font-size: 90%;
+    font-family: "Oswald";
+}
+article img {
+   /* align-self: flex-start;*/
+    width: 50%;
+    margin: .5em;
+}
+/*Gallery grid*/
+main.wGallery h2 {
+    text-align: center;
+
+}
+div.gallery {
+    padding: 0 2%;
+    display: grid;
+    grid-template-columns: auto;
+}
+div.gallery figure {
+    margin: 1rem .5rem;
+}
+div.gallery figure img {
+    width: 100%;
+    border: 1px solid #aaa;
+
+}
+div.gallery figure figcaption {
+    text-align: center;
+    font-size: 110%;
+    font-family: "Oswald";
+}
+
+footer {
+    display: flex;
+    background-color: #6d9dc5;
+    margin: 2rem;
+    padding: .5rem;
+    font-family: "Oswald";
+}
+/*storm center form*/
+main.stromForm h1 {
+    color: #447604;
+}
+form {
+    padding: 0 2%;
+}
+form fieldset {
+    padding: .7rem 2%;
+    border: 1px solid #6d9dc5;
+    border-radius: 10px;
+}
+form legend {
+    padding: 0 .5rem;
+    margin: 0 1rem;
+    color: #447604;
+}
+form label.upper {
+    color: #6d9dc5;
+    display: block;
+}
+form label.mid, form label.center {
+    color: #6d9dc5;
+    display: block;
+}
+
+form label.lower {
+    color: #6d9dc5;
+    display: block;
+}
+form label.upper input, form label.mid input, form label.lower input, form textarea.lower {
+    display: block;
+    padding: .75rem 0;
+    border-radius: 4px;
+}
+form input.submitBtn {
+    margin: 1rem;
+    padding: .75rem;
+    border-radius: 4px;
+}
+/*Thanks page*/
+main.thanks h1 {
+    margin:1rem;
+    color: #447604;
+}

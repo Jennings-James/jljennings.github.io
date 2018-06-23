@@ -18,12 +18,20 @@
 
     header {
         display: flex;
-        flex-direction:row;
+        flex-direction: row;
         flex-flow: wrap;
+        justify-content: space-around;
     }
     header h1 {
 
     }
+    main figure.mount {
+        display: flex;
+        width: 95vw;
+        justify-content: center;
+    }
+
+
     section.weather-summary {
         display: flex;
         flex-direction: row;
@@ -40,6 +48,11 @@
     div.gallery {
         grid-template-columns: 1fr 1fr;
         grid-gap: 3%;
+    }
+    section.home {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
 
 }

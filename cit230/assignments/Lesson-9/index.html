@@ -2,7 +2,7 @@
 <html lang="en-us">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, intitial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>On Time Wheather | Photo Gallery</title>
         <meta name="author" content="James Jennings CIT-230 BYU-I">
         <meta name="description" content="The On Time Wheather page photo Gallery">
@@ -26,48 +26,28 @@
         <nav>
             <button onclick="toggleNav()">&#9776;</button>
             <ul id= "primaryNav" class= "hide">
-                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="#">Home</a></li>
                 <li><a href="franklin-9.html">Franklin</a></li>
                 <li><a href="#">Greenville</a></li>
                 <li><a href="#">Springfield</a></li>
                 <li><a href="stormcenter-9.html">Storm Center</a></li>
-                <li class="active"><a href="#">Gallery</a></li>
+                <li><a href="gallery-9.html">Gallery</a></li>
             </ul>
         </nav>
-        <main class="wGallery">
-            <h2>Gallery</h2>
-            <div class="gallery">
-                <figure>
-                    <img src="image/pexels-photo-38136.jpeg" alt="Tree in the middle of the forest">
-                    <figcaption>Sun shines through the trees</figcaption>
-                </figure>
 
-                <figure>
-                    <img src="image/pexels-photo-417222.jpeg" alt="Glowing red snow covered mountains">
-                    <figcaption>Glowing red on snow covered mountains</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="image/pexels-photo-979488.jpeg" alt="A cabin at the base of the mountains">
-                    <figcaption>Quiet cabin at the base of the moutains</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="image/pexels-photo-979515.jpeg" alt="Pine forest with snow capped mountains">
-                    <figcaption>Pine forest with snow capped moutains</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="image/sun-mt-fuji-japan-landscape-407039.jpeg" alt="Sunset over mount Fuji">
-                    <figcaption>Sunset over mount-Fuji Japan</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="image/lava-magma-volcanic-eruption-glow-73830.jpeg" alt="Magma spewing from the ground">
-                    <figcaption>Magma spewing from the ground</figcaption>
-                </figure>
-            </div>
+        <main class="home">
+            <figure class="mount">
+                <img src="image/franklin-large.jpg" alt="Franklin mountains" sizes="(max-width: 40em) 35vw, 75vw" srcset="image/franklin-large.jpg 1200w, image/franklin-medium.jpg 800w, image/franklin-small.jpg 600w">
+            </figure>
         </main>
+
+        <section class="home">
+            <script src="scripts/towndata.js">
+            </script>
+            <span id="franklin"></span>
+            <span id="springfield"></span>
+            <span id="greenville"></span>
+        </section>
         <footer>
             <section class="contact">
                 On Time Weather llc. |
@@ -83,14 +63,6 @@
         </footer>
     </body>
 </html>
-
-
-
-
-
-
-
-
 
 
 

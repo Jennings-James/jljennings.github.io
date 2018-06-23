@@ -2,13 +2,14 @@
 <html lang="en-us">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, intial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Franklin city Weather | On Time Wheather</title>
         <meta name="author" content="James Jennings CIT-230 BYU-I">
         <meta name="description" content="The On Time Wheather page for Franklin">
 
         <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald,Raleway">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
         <link rel="stylesheet" href="styles/main-9.css">
         <link rel="stylesheet" href="styles/medium-9.css">
         <link rel="stylesheet" href="styles/large-9.css">
@@ -25,7 +26,7 @@
         <nav>
             <button onclick="toggleNav()">&#9776;</button>
             <ul id= "primaryNav" class= "hide">
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li class="active"><a href="#">Franklin</a></li>
                 <li><a href="#">Greenville</a></li>
                 <li><a href="#">Springfield</a></li>
@@ -36,29 +37,24 @@
 
         <main>
             <h2>Franklin Local Wheather</h2>
-            <figure>
+            <figure class="mount">
                 <img src="image/franklin-large.jpg" alt="Franklin mountains" sizes="(max-width: 40em) 35vw, 75vw" srcset="image/franklin-large.jpg 1200w, image/franklin-medium.jpg 800w, image/franklin-small.jpg 600w">
+
+                <script src="scripts/towndata.js">
+                </script>
+                <span id="franklin"></span>
+
             </figure>
             <section class="weather-summary">
-                <h3>Weather Summary</h3>
-                <div class="highlow">
-                    <p>High: 90&deg;F</p>
-                    <p>Low: 66&deg;F</p>
-                </div>
-                <div class="current">
-                    <picture>
-                        <img src="image/thesun.jpg"  alt="The sun" sizes="(max-width: 40em) 35vw, 75vw" srcset="image/thesun-large.jpg 1200w, image/thesun-medium.jpg 800w, image/thesun.jpg 600w">
-                    </picture>
-                    <h3>Sunny</h3>
-                </div>
-                <div class="conditions">
-                    <p>Precipitation: 0&#37;</p>
-                    <p>Wind Speed: 5mph SW</p>
-
-                    <script src="scripts/windchill.js">
-                    </script>
-                    <span class="windchill"></span>
-                </div>
+                <script src="scripts/currentweather.js">
+                </script>
+                <h3> Current Weather for: <span id="location">city</span></h3>
+                <p>Current Temperature: <span id="currentTemp">00</span>&deg;</p>
+                <p>Current Conditions: <span id="currentConditions">00</span></p>
+                <p>High Temperature: <span id="highTemp">00</span>&deg;</p>
+                <p>Low Temperature: <span id="lowTemp">00</span>&deg;</p>
+                <p>Wind Speed: <span id="wind">00</span></p>
+                <img src="image/placeholder.png" alt="current weather" id="weatherIcon">
             </section>
 
             <section class="forecast">

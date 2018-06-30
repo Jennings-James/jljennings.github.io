@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>On Time Wheather | Photo Gallery</title>
+        <meta name="author" content="James Jennings CIT-230 BYU-I">
+        <meta name="description" content="The On Time Wheather page photo Gallery">
+
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="styles/main-10.css">
+        <link rel="stylesheet" href="styles/medium-10.css">
+        <link rel="stylesheet" href="styles/large-10.css">
+        <script src="scripts/hamburger.js"></script>
+    </head>
+    <body>
+
+        <header>
+            <img src="image/utdwlogo.jpg" alt="On time weather logo">
+            <h1>On Time Weather</h1>
+            <div class="subheading">Local up to date weather!</div>
+        </header>
+
+        <nav>
+            <button onclick="toggleNav()">&#9776;</button>
+            <ul id= "primaryNav" class= "hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="franklin-10.html">Franklin</a></li>
+                <li><a href="greenville-10.html">Greenville</a></li>
+                <li><a href="springfield-10.html">Springfield</a></li>
+                <li><a href="stormcenter-10.html">Storm Center</a></li>
+                <li><a href="gallery-10.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main class="home">
+            <figure class="mount">
+                <img src="image/franklin-large.jpg" alt="Franklin mountains" sizes="(max-width: 40em) 35vw, 75vw" srcset="image/franklin-large.jpg 1200w, image/franklin-medium.jpg 800w, image/franklin-small.jpg 600w">
+            </figure>
+        </main>
+
+        <section class="home">
+            <script src="scripts/towndata.js">
+            </script>
+            <span id="franklin"></span>
+            <span id="springfield"></span>
+            <span id="greenville"></span>
+        </section>
+        <footer>
+            <section class="contact">
+                On Time Weather llc. |
+                999.999.9999 |
+                123 Main St. Franklin, US 99999
+                Google Map
+            </section>
+            <section class="footer-bar">&copy;2018 | All Rights Reserved | On Time Weather |
+                <script src="scripts/wayfinding.js">
+                </script>
+                <script src="scripts/currenDate.js">
+                </script>
+                <span id="currentdate"></span>
+            </section>
+        </footer>
+    </body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Franklin city Weather | On Time Wheather</title>
+        <meta name="author" content="James Jennings CIT-230 BYU-I">
+        <meta name="description" content="The On Time Wheather page for Franklin">
+
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="styles/main-10.css">
+        <link rel="stylesheet" href="styles/medium-10.css">
+        <link rel="stylesheet" href="styles/large-10.css">
+        <script src="scripts/hamburger.js"></script>
+    </head>
+    <body>
+
+        <header>
+            <img src="image/utdwlogo.jpg" alt="On time weather logo">
+            <h1>On Time Weather</h1>
+            <div class="subheading">Local up to date weather!</div>
+        </header>
+
+        <nav>
+            <button onclick="toggleNav()">&#9776;</button>
+            <ul id= "primaryNav" class= "hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="franklin-10.html">Franklin</a></li>
+                <li><a href="greenville-10.html">Greenville</a></li>
+                <li><a href="springfield-10.html">Springfield</a></li>
+                <li><a href="stormcenter-10.html">Storm Center</a></li>
+                <li><a href="gallery-10.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Springfield Local Wheather</h2>
+            <figure class="mount">
+                <img src="image/springfield_large.jpeg" alt="Springfield" sizes="(max-width: 40em) 35vw, 75vw" srcset="image/springfield_large.jpeg 1200w, image/springfield_medium.jpg 800w, image/springfield_small.jpg 600w">
+
+            </figure>
+            <section class="weather-summary">
+                <script src="scripts/currentweather-s.js">
+                </script>
+                <h3> Current Weather for: <span id="location">city</span></h3>
+                <p>Current Temperature: <span id="currentTemp">00</span>&deg;</p>
+                <p>Current Conditions: <span id="currentConditions">00</span></p>
+                <p>High Temperature: <span id="highTemp">00</span>&deg;</p>
+                <p>Low Temperature: <span id="lowTemp">00</span>&deg;</p>
+                <p>Wind Speed: <span id="wind">00</span></p>
+                <img src="image/placeholder.png" alt="current weather" id="weatherIcon">
+            </section>
+
+            <section class="forecast">
+                <h3>Ten Day Forecast</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day 1</th>
+                            <th>Day 2</th>
+                            <th>Day 3</th>
+                            <th>Day 4</th>
+                            <th>Day 5</th>
+                            <th>Day 6</th>
+                            <th>Day 7</th>
+                            <th>Day 8</th>
+                            <th>Day 9</th>
+                            <th>Day 10</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>89&deg;F</td>
+                            <td>87&deg;F</td>
+                            <td>78&deg;F</td>
+                            <td>75&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>79&deg;F</td>
+                            <td>83&deg;F</td>
+                            <td>85&deg;F</td>
+                            <td>89&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <article>
+                <h3>Franklin Breaks Record</h3>
+                <img src="image/dehydratedclaysoil.jpg"  alt= "Dehydrated clay soil with dead tree" sizes="(max-width: 40em) 35vw, 75vw" srcset="image/dehydratedclaysoil-large.jpg 1200w, image/dehydratedclaysoil-medium.jpg 800w,image/dehydratedclaysoil-small.jpg 600w">
+
+                <p class="town-article">HOT! HOT! HOT! For the third day running Franklin has broken a high tempreture record. Combine the hotter then average temps with no rain over the last 30 days and you have a recipe for disaster. The fire danger accros the regin is very high, so be very careful in the outdoors. The good news is temps will be dropping to near normal in the next few days. The bad news is there is no rain in sight.
+                </p>
+            </article>
+
+        </main>
+
+        <footer>
+            <section class="contact">
+                On Time Weather llc. |
+                999.999.9999 |
+                123 Main St. Franklin, US 99999
+                Google Map
+            </section>
+            <section class="footer-bar">&copy;2018 | All Rights Reserved | On Time Weather |
+                <script src="scripts/wayfinding.js">
+                </script>
+                <script src="scripts/currenDate.js">
+                </script>
+                <span id="currentdate"></span>
+            </section>
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,43 @@
+@media only screen and (min-width: 64em) {
+
+    header h1 {
+        font-size: 4rem;
+        margin-top: 12rem;
+    }
+
+    #welcome {
+        font-size: 17px;
+    }
+    #event {
+        font-size: 17px;
+    }
+    #adventure {
+        font-size: 17px;
+    }
+    #service {
+        font-size: 17px;
+    }
+    #local {
+        font-size: 17px;
+    }
+    .resource li {
+        font-size: 17px;
+    }
+    .divide {
+        font-size: 17px;
+    }
+    form label.top input, form label.bottum input, form textarea.bottum {
+        display: block;
+        padding: .25rem;
+    }
+    .mtour {
+        font-size: 17px;
+    }
+    .rtour {
+        font-size: 17px;
+    }
+    .details {
+        font-size: 17px;
+    }
+}
+

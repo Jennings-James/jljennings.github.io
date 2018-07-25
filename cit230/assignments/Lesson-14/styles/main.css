@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css?family=Wendy+One");
+@import url("https://fonts.googleapis.com/css?family=Muli");
+
+    body {
+        background-color: #bacba9;
+        font-size: 16px;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    header picture {
+        max-width: 100%;
+        margin: 1rem;
+    }
+    header h1 {
+        color: #717568;
+        font-family: 'Wendy One', sans-serif;
+        margin: 1.5rem;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    nav button {
+        margin: .2rem 2%;
+        background-color: transparent;
+        border: none;
+        font-size: 1.6rem;
+        }
+    nav ul {
+        align-self: center;
+        list-style-type: none;
+        margin: .5rem;
+        padding: .5rem;
+    }
+    nav ul li {
+        align-items: center;
+        padding: .5rem;
+    }
+    nav ul li a {
+        background-color: #3f4739 ;
+        color: #ffffff ;
+        text-decoration: none;
+        border: 1px solid #ffffff ;
+        padding: .5rem;
+    }
+    nav ul li a:hover {
+        background-color: #e1f4cb;
+        color: #717568;
+    }
+    nav ul.hide {
+        display: none;
+    }
+    nav ul li.active a {
+        color: #717568;
+        background-color: #e1f4cb;
+    }
+    .upper {
+        display: flex;
+        flex-direction: column;
+    }
+    #welcome {
+        border: .5rem solid #717568;
+        padding: .5rem;
+        max-width: 400px;
+        color: #ffffff;
+        font-size: 14px;
+        font-family: 'muli', sans-serif;
+    }
+    #welcome h3 {
+        display: flex;
+        color: #717568;
+        justify-content: center;
+        font-family: 'Wendy One', sans-serif;
+    }
+    #sales img {
+        max-width: 100%;
+    }
+    #sales {
+        border: .5rem solid #717568;
+        padding: .5rem;
+        max-width: 400px;
+        color: #ffffff;
+        font-family: 'muli', sans-serif;
+    }
+    #sales h3 {
+        display: flex;
+        color: #717568;
+        justify-content: center;
+        font-family: 'Wendy One', sans-serif;
+    }
+    #sales a {
+        display: flex;
+        justify-content: center;
+    }
+    #event {
+        border: .5rem solid #717568;
+        padding: .5rem;
+        max-width: 400px;
+        color: #ffffff;
+        font-size: 14px;
+        font-family: 'muli', sans-serif;
+    }
+    #event h3 {
+        display: flex;
+        color: #717568;
+        justify-content: center;
+        font-family: 'Wendy One', sans-serif;
+    }
+    .lower {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    #adventure {
+        border: .5rem solid #717568;
+        padding: .5rem;
+        max-width: 400px;
+        color: #ffffff;
+        font-size: 14px;
+        font-family: 'muli', sans-serif;
+    }
+    #adventure h3{
+        display: flex;
+        color: #717568;
+        justify-content: center;
+        font-family: 'Wendy One', sans-serif;
+    }
+    #adventure a {
+        display: flex;
+        justify-content: center;
+    }
+    #adventure img {
+        max-width: 100%;
+    }
+    #service {
+        border: .5rem solid #717568;
+        padding: .5rem;
+        max-width: 400px;
+        color: #ffffff;
+        font-size: 14px;
+        font-family: 'muli', sans-serif;
+    }
+    #title {
+        display: flex;
+        color: #717568;
+        justify-content: center;
+    }
+    #special {
+        color: darkorange;
+    }
+    #special1 {
+        color: darkorange;
+    }
+    #local {
+        border: .5rem solid #717568;
+        padding: .5rem;
+        max-width: 400px;
+        color: #ffffff;
+        font-size: 14px;
+        font-family: 'muli', sans-serif;
+    }
+    #local h3 {
+        display: flex;
+        color: #717568;
+        justify-content: center;
+        font-family: 'Wendy One', sans-serif;
+    }
+    footer {
+        background-color: #3f4739;
+        font-family: muli, sans-serif;
+    }
+    section.contact {
+        color: white;
+        margin: 0rem 1rem 0rem 1rem;
+        padding: .5rem 0rem;
+    }
+
+        /*sales page styles*/
+    .accordion  dt a {
+        background-color: #3f4739 ;
+        color: #ffffff ;
+        text-decoration: none;
+        border: 1px solid #ffffff ;
+        padding: .5rem;
+    }
+    .accordion {
+        display: flex;
+        flex-direction: column;
+    }
+    .accordion dt {
+        align-self: center;
+        margin: .6rem;
+    }
+    .accordion dd {
+        align-self: center;
+    }
+
+        /*resource styles*/
+    .resource {
+        display: flex;
+        flex-direction: column;
+    }
+    .resource h3 {
+        color: #717568;
+        margin-left: 2rem;
+        font-family: 'Wendy One', sans-serif;
+    }
+    .info {
+        border: .5rem solid #717568;
+        max-width: 30rem;
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+    .resource li {
+        color: #ffffff;
+        font-size: 14px;
+    }
+#bike, #bike2, #bike3 {
+        max-width: 100%;
+    }
+
+        /*service styles*/
+    #mservice {
+        display: flex;
+        flex-direction: column;
+    }
+    #srvuper {
+        margin: .5rem;
+        border: .5rem solid #717568;
+        padding: .5rem;
+        max-width: 400px;
+        color: #ffffff;
+        font-size: 14px;
+        font-family: 'muli', sans-serif;
+    }
+    #mservice img {
+        max-width: 100%;
+        margin: .5rem;
+    }
+
+        /*events styles*/
+    .events {
+        display: flex;
+        flex-direction: column;
+    }
+    .divide {
+        border: .5rem solid #717568;
+        padding: .5rem;
+        max-width: 400px;
+        color: #ffffff;
+        font-size: 14px;
+        font-family: 'muli', sans-serif;
+    }
+    .divide h2, h3 {
+        color: #717568;
+        margin: 2rem;
+        font-family: 'Wendy One', sans-serif;
+    }
+    .form {
+        border: .5rem solid #717568;
+        padding: .5rem;
+        max-width: 400px;
+        color: #ffffff;
+        font-size: 14px;
+        font-family: 'muli', sans-serif;
+    }
+    form legend {
+        padding: 0 .5rem;
+        margin: 0 1rem;
+        color:  #717568;
+    }
+    form label.top, form label.bottum {
+        display: block;
+    }
+    form label.top input, form label.bottum input, form textarea.bottum {
+        display: block;
+        padding: .75rem;
+    }
+    form label.shirt {
+        padding: .5rem;
+    }
+    .detail {
+        border: .5rem solid #717568;
+        padding: .5rem;
+        max-width: 400px;
+        color: #ffffff;
+        font-size: 14px;
+        font-family: 'muli', sans-serif;
+    }
+    .detail h2 {
+        color: #717568;
+        margin: 2rem;
+        font-family: 'Wendy One', sans-serif;
+    }
+
+        /*thanks styles*/
+
+    .thanks {
+        display:flex;
+        flex-direction: column;
+    }
+    #thanks {
+        border: .5rem solid #717568;
+        padding: .5rem;
+        max-width: 400px;
+    }
+    main.thanks h1 {
+        color:  #717568;
+    }
+
+        /*tour styles*/
+    .advtour {
+        display: flex;
+        flex-direction: column;
+    }
+    .mtour {
+        border: .5rem solid #717568;
+        padding: .5rem;
+        max-width: 400px;
+        color: #ffffff;
+        font-size: 14px;
+        font-family: 'muli', sans-serif;
+    }
+    .rtour {
+        border: .5rem solid #717568;
+        padding: .5rem;
+        max-width: 400px;
+        color: #ffffff;
+        font-size: 14px;
+        font-family: 'muli', sans-serif;
+    }
+    .details {
+        border: .5rem solid #717568;
+        padding: .5rem;
+        max-width: 400px;
+        color: #ffffff;
+        font-size: 14px;
+        font-family: 'muli', sans-serif;
+    }
+
+        /*contact styles*/
+    .mcontact {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .contactus {
+        border: .5rem solid #717568;
+        padding: .5rem;
+        max-width: 400px;
+        color: #ffffff;
+        font-size: 14px;
+        font-family: 'muli', sans-serif;
+    }
+
+

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Mountain Spoke | The Top Bicycle Shop in Montana</title>
+        <meta name="author" content="James Jennings CIT-230 BYU-I">
+        <meta name="description" content="The Mountain Spoke Home Page"><!-- Remove after fixing title and descriptiontags -->
+
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Wendy+One">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <script src="scripts/hamburger.js">
+        </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+                   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                   crossorigin="anonymous"></script>
+        <script>
+            $(function () {
+                //Hide all panels
+                var panels = $('.accordion > dd').hide();
+
+                panels.first().show();
+
+                //create var for this onclick
+                $('.accordion > dt >').click(function() {
+                    var doit = $(this);
+
+                    //slide up all panels
+                    panels.slideUp();
+
+                    //slide down target panel
+                    doit.parent().next().slideDown();
+
+                    return false;
+                })
+
+            })
+
+        </script>
+    </head>
+
+    <body>
+        <header>
+            <picture>
+                <source srcset="images/LogoMakr_1d5MWR_small.png" media="(max-width: 600px)">
+                <source srcset="images/LogoMakr_1d5MWR_medium.png" media="(max-width: 1000px)">
+                <source srcset="images/LogoMakr_1d5MWR.png">
+                <img src="images/LogoMakr_1d5MWR.png" alt="The Mountain Spoke logo">
+            </picture>
+
+            <h1>The Top Bike Shop in Montana!</h1>
+        </header>
+
+        <nav>
+            <button onclick="toggleNav()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="tours.html">Adventures</a></li>
+                <li><a href="sales.html">Sales</a></li>
+                <li><a href="service.html">Service</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <dl class="accordion">
+                <dt><a href="#">Mountain Bike</a></dt>
+                <dd><img id="bike" src="images/ninerbk450.jpg" alt="niner mountain bike">
+                    <ul>
+                        <li>Niner JET 9 RDO Carbon Frame completely redesigned frame</li>
+                        <li>Plus Size Compatibility run up to a 29x2.5 tire or 27.5x3.0</li>
+                        <li>Shimano XT M8000 Disc Brakes</li>
+                        <li>Shimano XT 1x11 Drivetrain for performance and reliability</li>
+                        <li>130mm RockShox Pike RC sucks up the rough stuff</li>
+                        <li>RaceFace Turbine 1x crankset engineered for stiffness</li>
+                        <li>Stan's No Tubes Neo/ZTR Arch MK3 29" wheels are tubeless ready</li>
+                    </ul>
+                </dd>
+
+                <dt><a href="#">Road Bike</a></dt>
+                <dd><img id="bike2" src="images/fujibk450.jpg" alt="fuji road bike">
+                    <ul>
+                        <li>Cassette: Shimano 105, 11/28T</li>
+                        <li>Chain: KMC X11</li>
+                        <li>Crankset: Oval 520, compact</li>
+                        <li>Fork: FC 440 Carbon fork and steerer, tapered</li>
+                        <li>Frame: C10 carbon fiber frame, tapered head tube, PF30 bottom<br> bracket       shell, vertical replaceable dropouts</li>
+                        <li>Saddle: Oval 300, steel rails, vinyl cover</li>
+                        <li>Shifters: Shimano 105</li>
+                        <li>Tires: Vittoria Zaffiro Pro Slick, 700x25, 60TPI</li>
+                        <li>Wheelset: Vera Corsa DPM27 clinchers, 24x28H</li>
+                    </ul>
+                </dd>
+
+                <dt><a href="#">Electric Bike</a></dt>
+                <dd><img id="bike3" src="images/ebike450.jpg" alt="teakt ebike">
+                    <ul>
+                        <li>Brand Teakt</li>
+                        <li>Gears 27</li>
+                        <li>Fast charge battery</li>
+                        <li>Load capacity: under 200KG</li>
+                        <li>Full dimension: 172 x 106cm/67 x 41.3inch</li>
+                        <li>26" wheels Electric Mountain Bike with Aluminum Alloy spokes.</li>
+                    </ul>
+                </dd>
+            </dl>
+        </main>
+
+        <footer>
+            <section class="contact">
+                The Mountain Spoke llc. |
+                123.456.7890 |
+                3950 Valley Commons Drive Bozeman, MT US 99999 |
+                &copy; 2018 | All Rights Reserved | The Mountain Spoke |
+                <a href="contacts.html">Contact Us</a> |
+                <a href="resources.html">Resources</a>
+            </section>
+
+            <section>
+                <script src="scripts/wayfinding.js"></script>
+            </section>
+        </footer>
+    </body>
+</html>

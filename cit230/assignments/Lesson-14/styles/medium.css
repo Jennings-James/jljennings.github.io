@@ -1,0 +1,72 @@
+@media only screen and (min-width:37.5em) {
+
+    header {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    header h1 {
+        font-size: 2rem;
+        margin-top: 5rem;
+    }
+    header picture{
+        max-width: 100%;
+    }
+    nav {
+        display:contents;
+    }
+    nav button {
+        display:none;
+    }  /* hamburger button does not need to be shown in the medium on up views */
+
+    nav ul.hide {
+        display: flex;
+        justify-content: space-around;
+    }
+    .upper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .lower {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    section.contact {
+        display: flex;
+        justify-content: center;
+    }
+    #mservice {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .events {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .divide {
+
+    }
+    .thanks {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .advtour {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .mcontact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .resource {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

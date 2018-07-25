@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Mountain Spoke | The Top Bicycle Shop in Montana</title>
+        <meta name="author" content="James Jennings CIT-230 BYU-I">
+        <meta name="description" content="The Mountain Spoke Home Page"><!-- Remove after fixing title and descriptiontags -->
+
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Wendy+One">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <script src="scripts/hamburger.js"></script>
+    </head>
+    <body>
+        <header>
+            <picture>
+                <source srcset="images/LogoMakr_1d5MWR_small.png" media="(max-width: 600px)">
+                <source srcset="images/LogoMakr_1d5MWR_medium.png" media="(max-width: 1000px)">
+                <source srcset="images/LogoMakr_1d5MWR.png">
+                <img src="images/LogoMakr_1d5MWR.png" alt="The Mountain Spoke logo">
+            </picture>
+
+            <h1>The Top Bike Shop in Montana!</h1>
+        </header>
+
+        <nav>
+            <button onclick="toggleNav()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="tours.html">Adventures</a></li>
+                <li><a href="sales.html">Sales</a></li>
+                <li><a href="service.html">Service</a></li>
+            </ul>
+        </nav>
+
+        <main id="mservice">
+            <section id="srvuper">
+                <h3>Welcome to Service department!</h3>
+                <p id="pstable"></p>
+            </section>
+
+            <section id="srvlower">
+                <img src="images/bike_service.jpg" alt="a bike in service">
+            </section>
+        </main>
+
+        <footer>
+            <section class="contact">
+                The Mountain Spoke llc. |
+                123.456.7890 |
+                3950 Valley Commons Drive Bozeman, MT US 99999 |
+                &copy; 2018 | All Rights Reserved | The Mountain Spoke |
+                <a href="contacts.html">Contact Us</a> |
+                <a href="resources.html">Resources</a>
+            </section>
+
+            <section>
+                <script src="scripts/wayfinding.js"></script>
+                <script src="scripts/prtsrvtable.js"></script>
+            </section>
+        </footer>
+    </body>
+</html>

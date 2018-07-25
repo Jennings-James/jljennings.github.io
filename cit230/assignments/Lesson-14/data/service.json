@@ -1,0 +1,12 @@
+
+{
+"service": {
+
+
+    "bike1": "mountain bike", "bike2": "road bike", "bike3": "electric bike",
+    "job1": "tune-up", "job2": "tire-install", "job3": "brake-replace",
+    "price1": "$25.95", "price2": "$29.95", "price3": "$38.95",
+    "price4": "$39.95", "price5": "$79.95"
+
+}
+}

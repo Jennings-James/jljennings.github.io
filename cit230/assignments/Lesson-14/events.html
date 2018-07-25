@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Mountain Spoke | The Top Bicycle Shop in Montana</title>
+        <meta name="author" content="James Jennings CIT-230 BYU-I">
+        <meta name="description" content="The Mountain Spoke Home Page"><!-- Remove after fixing title and descriptiontags -->
+
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Wendy+One">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <script src="scripts/hamburger.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <picture>
+                <source srcset="images/LogoMakr_1d5MWR_small.png" media="(max-width: 600px)">
+                <source srcset="images/LogoMakr_1d5MWR_medium.png" media="(max-width: 1000px)">
+                <source srcset="images/LogoMakr_1d5MWR.png">
+                <img src="images/LogoMakr_1d5MWR.png" alt="The Mountain Spoke logo">
+            </picture>
+
+            <h1>The Top Bike Shop in Montana!</h1>
+        </header>
+
+        <nav>
+            <button onclick="toggleNav()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="tours.html">Adventures</a></li>
+                <li><a href="sales.html">Sales</a></li>
+                <li><a href="service.html">Service</a></li>
+            </ul>
+        </nav>
+
+        <main class="events">
+            <article class="divide">
+                <h2>Cycle the Continental Divide</h2>
+                <p>SEPTEMBER 20-23, 2018</p>
+                <p>Cycle the Continental Divide annual event. We have 5 different classes including 2 youth classes and 3 adult classes. The pro class spans the full 4 days of the event and covers 250 miles and about 5000 ft of elevation change. The intermediate class is 2 days and 78 miles and about 1800 ft of elevation. The amateur class is 1 day and covers 45 miles and about 800 ft of elevation. Youth riders can choose from amateur which covers 20 miles in the foot hills with little elevation change. Or advanced which is the same as the adult amateur course. </p>
+                <h3>Sign up before August 15 and recive a free event t-shirt</h3>
+            </article>
+
+            <section class="form">
+                <h3>Event Sign Up</h3>
+                    <form method="get" action="thanks.html">
+                        <fieldset>
+                            <legend>Basic Inormation</legend>
+                            <label class="top">First Name* <input type="text" name="fname" pattern="[A-Za-z].{1,}" required></label>
+                            <label class="top">Last Name* <input type="text" name="lname" pattern="[A-Za-z].{1,}" required></label>
+                            <label class="top">Home State <input list="state" name="state"></label>
+                            <datalist id="state">
+                                <option value="AL">AL</option>
+                                <option value="AK">AK</option>
+                                <option value="AR">AR</option>
+                                <option value="AZ">AZ</option>
+                                <option value="CA">CA</option>
+                                <option value="CO">CO</option>
+                                <option value="CT">CT</option>
+                                <option value="DC">DC</option>
+                                <option value="DE">DE</option>
+                                <option value="FL">FL</option>
+                                <option value="GA">GA</option>
+                                <option value="HI">HI</option>
+                                <option value="IA">IA</option>
+                                <option value="ID">ID</option>
+                                <option value="IL">IL</option>
+                                <option value="IN">IN</option>
+                                <option value="KS">KS</option>
+                                <option value="KY">KY</option>
+                                <option value="LA">LA</option>
+                                <option value="MA">MA</option>
+                                <option value="MD">MD</option>
+                                <option value="ME">ME</option>
+                                <option value="MI">MI</option>
+                                <option value="MN">MN</option>
+                                <option value="MO">MO</option>
+                                <option value="MS">MS</option>
+                                <option value="MT">MT</option>
+                                <option value="NC">NC</option>
+                                <option value="NE">NE</option>
+                                <option value="NH">NH</option>
+                                <option value="NJ">NJ</option>
+                                <option value="NM">NM</option>
+                                <option value="NV">NV</option>
+                                <option value="NY">NY</option>
+                                <option value="ND">ND</option>
+                                <option value="OH">OH</option>
+                                <option value="OK">OK</option>
+                                <option value="OR">OR</option>
+                                <option value="PA">PA</option>
+                                <option value="RI">RI</option>
+                                <option value="SC">SC</option>
+                                <option value="SD">SD</option>
+                                <option value="TN">TN</option>
+                                <option value="TX">TX</option>
+                                <option value="UT">UT</option>
+                                <option value="VT">VT</option>
+                                <option value="VA">VA</option>
+                                <option value="WA">WA</option>
+                                <option value="WI">WI</option>
+                                <option value="WV">WV</option>
+                                <option value="WY">WY</option>
+                            </datalist>
+                            <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+                            <label class="top">Phone* <input type="tel" name="phone" required></label>
+                            <label class="top">Date of Birth* <input type="date" name="bday" required></label>
+                            <p>All fields marked with * are required.</p>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Additional Infformation</legend>
+                            <label class="bottum">Select Class<input list="class" name="class"></label>
+                            <datalist id="class">
+                                <option value="Adult Pro-$50">
+                                <option value="Adult Intermediate-$35">
+                                <option value="Adult Amateur-$25">
+                                <option value="Youth Advanced-$20">
+                                <option value="Youth Amateur-$15">
+                            </datalist>
+                            <label class="bottum">T-shirt size</label>
+                            <label class="shirt"><input type="radio" name="size" value="xs">XS</label> <label class="shirt"><input type="radio" name="size" value="s">S</label> <label class="shirt"><input type="radio" name="size" value="m">M</label> <label class="shirt"><input type="radio" name="size" value="l">L</label> <label class="shirt"><input type="radio" name="size" value="xl">XL</label>
+                            <label class="bottum">Special consideration/comments</label>
+                            <textarea class="bottum" rows="2" cols="30" name="special"></textarea>
+                            <label class="bottum"><input type="submit" value="sign up" class="submitButton"></label>
+                        </fieldset>
+                    </form>
+            </section>
+
+            <article class="detail">
+                <h2>Things you should know</h2>
+                <ul>
+                    <li>All riders must wear a helmet.<br><br></li>
+                    <li>The cost for adult riders 18 and up is<br><br></li>
+                    <li>$50.00 pro, $35.00 intermediate, $25.00 amature.<br><br></li>
+                    <li>The cost for youth 14-18 years of age is<br><br></li>
+                    <li>$15.00 amature, $20.00 advanced.<br><br></li>
+                    <li>Youth riders are 14-18 years old 18.<br><br></li>
+                    <li>Any 18 year old may ride in the adult classes.<br><br></li>
+                    <li>This a charity event all proceeds benefit<br><br></li>
+                    <li>The Mountain Spoke Children’s Foundation.<br><br></li>
+                    <li>All sign ups before August 15 get a free t-shirt.</li>
+                </ul>
+            </article>
+        </main>
+
+        <footer>
+            <section class="contact">
+                The Mountain Spoke llc. |
+                123.456.7890 |
+                3950 Valley Commons Drive Bozeman, MT US 99999 |
+                &copy; 2018 | All Rights Reserved | The Mountain Spoke |
+                <a href="contacts.html">Contact Us</a> |
+                <a href="resources.html">Resources</a>
+            </section>
+
+            <section>
+                <script src="scripts/wayfinding.js"></script>
+            </section>
+        </footer>
+    </body>
+</html>

@@ -69,4 +69,19 @@
         flex-direction: row;
         justify-content: space-around;
     }
+    .race {
+        display: flex;
+        flex-direction: row;
+    }
+    .jump {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .video {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 100%;
+    }
 }

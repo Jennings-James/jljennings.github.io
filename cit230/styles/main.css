@@ -4,38 +4,38 @@
 /* * is a wildcard referring to all elements. */
 * { margin: 0; box-sizing: border-box; }
 
-body {
-    font-size: 16px;
-    line-height: 32px;
-    font-family: times new roman;
-    color: forestgreen;
-}
+    body {
+        font-size: 16px;
+        line-height: 32px;
+        font-family: 'times new roman';
+        color: forestgreen;
+    }
 
-h1 {
-    font-size: 3.5rem;
-    color: sandybrown;
-}
+    h1 {
+        font-size: 3.5rem;
+        color: sandybrown;
+    }
 
-h2 {
-    font-size: 1.5rem;
-    text-align: center;
-    border-bottom: 2px solid #bbb;
-}
+    h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        border-bottom: 2px solid #bbb;
+    }
 
-header, main, footer {
-    margin: 1.25rem auto;
-    padding: .5rem;
-    max-width: 600px;
-}
+    header, main, footer {
+        margin: 1.25rem auto;
+        padding: .5rem;
+        max-width: 600px;
+    }
 
-header, footer, footer a {
-    text-align: center;
-    background-color: blue;
-    color: whitesmoke;
-}
+    header, footer, footer a {
+        text-align: center;
+        background-color: blue;
+        color: whitesmoke;
+    }
 
-header img {
-    width: 200px;
-    height: auto;
-    float: right;
-}
+    header img {
+        width: 200px;
+        height: auto;
+        float: right;
+    }

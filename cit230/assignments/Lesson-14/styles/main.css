@@ -217,7 +217,7 @@
         color: #ffffff;
         font-size: 14px;
     }
-#bike, #bike2, #bike3 {
+    #bike, #bike2, #bike3 {
         max-width: 100%;
     }
 
@@ -244,6 +244,11 @@
     .events {
         display: flex;
         flex-direction: column;
+    }
+    .race {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
     }
     .divide {
         border: .5rem solid #717568;
@@ -323,6 +328,11 @@
         font-size: 14px;
         font-family: 'muli', sans-serif;
     }
+    .jump {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     .rtour {
         border: .5rem solid #717568;
         padding: .5rem;
@@ -355,4 +365,11 @@
         font-family: 'muli', sans-serif;
     }
 
+/*video styles*/
+.video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+}
 
